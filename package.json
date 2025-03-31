@@ -16,7 +16,7 @@
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/OlexandrBilyk/God-of-War-Ragnarok-"
+    "url": "git+https://github.com/OlexandrBilyk/God-of-War-Ragnarok-"
   },
   "dependencies": {
     "modern-normalize": "^1.1.0"
