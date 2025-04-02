@@ -1,0 +1,49 @@
+.hero {
+  padding: 186px 0;
+  background-image: url('../images/herobg.jpg');
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-color: #1c2023;
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 85%;
+    height: 100%;
+    background: url(../images/videos/snow.gif) no-repeat center / cover;
+    opacity: 0.1;
+  }
+
+  &__title {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    font-size: 100px;
+    line-height: 100%;
+    color: #fff;
+    max-width: 538px;
+  }
+  &__text {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #a9c7c7;
+    max-width: 543px;
+    margin: 27px 0 49px;
+  }
+
+  &__btn {
+    padding: 11px 37px;
+    border-radius: 6px;
+    background-color: #8856d9;
+
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+}
