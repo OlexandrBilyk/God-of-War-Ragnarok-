@@ -4,13 +4,13 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
-  background-color: #000;
+  width: 100%;
 
   & .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: 1406px;
   }
 
   &__pages {
@@ -40,6 +40,12 @@
   justify-content: center;
   gap: 31px;
   width: 639px;
+  opacity: 1;
+  transition: opacity 250ms ease-in-out;
+
+  &.is-hidden {
+    opacity: 0;
+  }
 
   &__item {
     &:nth-child(7) {
