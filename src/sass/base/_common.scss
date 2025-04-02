@@ -4,6 +4,20 @@ html {
 body {
   font-family: 'Rubik', sans-serif;
 }
+.container {
+  width: 100%;
+  max-width: 375px;
+  min-width: 320px;
+  @media (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media (min-width: 1200px) {
+    max-width: 1411px;
+  }
+
+  padding: 0 15px;
+  margin: 0 auto;
+}
 button {
   display: block;
   cursor: pointer;
