@@ -8,6 +8,7 @@
     font-size: 40px;
     color: #fff;
     margin-bottom: 32px;
+    text-align: center;
   }
 }
 .editions-list {
@@ -29,6 +30,7 @@
   &__thumb {
     width: 316px;
     height: 172px;
+    border-radius: 6px;
   }
   &__img {
     object-fit: cover;
@@ -52,8 +54,8 @@
   }
   &__features {
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
     flex-direction: column;
     gap: 12px;
     margin-bottom: 6px;
@@ -66,8 +68,8 @@
   }
   &__cost {
     display: flex;
-    align-items: flex-end;
-    justify-content: center;
+    align-items: center;
+    justify-content: flex-end;
     flex-direction: column;
     gap: 14px;
   }
