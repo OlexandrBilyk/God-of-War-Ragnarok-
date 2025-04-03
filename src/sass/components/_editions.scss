@@ -1,0 +1,91 @@
+.editions {
+  padding: 60px 0;
+  background-color: #1c2023;
+
+  &__title {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 32px;
+  }
+}
+.editions-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 17px;
+    border-radius: 6px;
+    background-image: linear-gradient(180deg, #141615 0%, #1c2023 100%);
+  }
+
+  &__thumb {
+    width: 316px;
+    height: 172px;
+  }
+  &__img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+  }
+  &__title {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+    margin: 21px 0 15px;
+  }
+  &__text {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #a9c7c7;
+    margin-bottom: 32px;
+  }
+  &__features {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 6px;
+  }
+  &__feature {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #8c96a0;
+  }
+  &__cost {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    gap: 14px;
+  }
+  &__price {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 19px;
+    color: #fff;
+  }
+  &__btn {
+    padding: 8px 19px;
+    border-radius: 6px;
+    background-color: #8856d9;
+
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+}
