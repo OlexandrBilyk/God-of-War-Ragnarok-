@@ -1,30 +1,48 @@
 .footer {
   padding: 155px 0 12px 0;
-//   padding: 0 0 12px 0;
-//   top: 155px;
   position: relative;
   background-color: #1c2023;
-}
-.footer::before {
-  content: ' ';
-  display: block;
-  width: 786px;
-  height: 440px;
-  position: absolute;
-  top: -20;
-  right: 5%;
   z-index: 1;
+  @media screen and (min-width: 1200px) {
+    padding-top: 175px;
+  }
+}
+.footer-bg {
+  width: 522px;
+  height: 292px;
+  position: absolute;
+  top: 175;
+  left:-20px;
+  z-index: -1;
   background: url('../images/footerbg@1x.png') no-repeat center/cover;
+  @media screen and (min-width: 768px) {
+    top: 60;
+    left: 120px;
+    width: 626px;
+    height: 350px;
+  }
+  @media screen and (min-width: 1200px) {
+    top: 0;
+    left: 400px;
+    width: 786px;
+    height: 440px;
+  }
 }
 .footer-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-align: center;
+  flex-direction: column;
+  gap: 30px;
+  @media screen and (min-width: 768px){
+    flex-direction: row;
+  }
 }
 .footer-list {
   display: flex;
   gap: 18px;
+  flex-direction: column;
   &__link {
     font-weight: 400;
     font-size: 16px;
@@ -34,6 +52,12 @@
     &:hover {
         color: #fff;
     }
+  }
+  @media screen and (min-width: 768px){
+    flex-direction: row;
+  }
+  @media screen and (min-width: 1200px){
+    flex-direction: row;
   }
 }
 .footer-language {
@@ -53,10 +77,12 @@
   align-items: center;
   &__text {
     text-align: center;
-    max-width: 904px;
     color: #8c96a0;
     padding: 50px 0 37px 0;
     z-index: 100;
+    @media screen and (min-width: 992px){
+      max-width: 904px;
+    }
   }
   &__logo {
     width: 46px;
