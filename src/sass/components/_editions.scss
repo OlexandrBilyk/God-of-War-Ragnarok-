@@ -18,10 +18,6 @@
   gap: 16px;
 
   &__item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     padding: 17px;
     border-radius: 6px;
     background-image: linear-gradient(180deg, #141615 0%, #1c2023 100%);
@@ -44,6 +40,7 @@
     font-size: 16px;
     color: #fff;
     margin: 21px 0 15px;
+    text-align: center;
   }
   &__text {
     font-family: 'Rubik', sans-serif;
@@ -51,10 +48,11 @@
     font-size: 16px;
     color: #a9c7c7;
     margin-bottom: 32px;
+    text-align: center;
   }
   &__features {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
     gap: 12px;
@@ -68,7 +66,7 @@
   }
   &__cost {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: flex-end;
     flex-direction: column;
     gap: 14px;
