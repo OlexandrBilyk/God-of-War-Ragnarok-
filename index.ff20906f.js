@@ -1,0 +1,2 @@
+var openMenu=document.getElementById("openHeaderMenu"),menu=document.getElementById("headerMenu"),mobileMenu=document.getElementById("mobileMenu"),mobileMenuClose=document.getElementById("mobileMenuClose");openMenu.addEventListener("click",(function(){window.innerWidth>=1024?menu.classList.toggle("is-hidden"):mobileMenu.classList.remove("is-hidden")})),mobileMenuClose.addEventListener("click",(function(){mobileMenu.classList.add("is-hidden")}));
+//# sourceMappingURL=index.ff20906f.js.map
