@@ -1,0 +1,109 @@
+.news {
+  background: #1c2023;
+  padding-top: 157px;
+  overflow: hidden;
+  position: relative;
+  &__title {
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 30px;
+  }
+}
+.news-list {
+  display: flex;
+  gap: 18px;
+}
+.news__btn {
+  position: absolute;
+  &--left {
+    left: 50px;
+    bottom: 157px;
+    z-index: 10;
+  }
+  &--right {
+    right: 50px;
+    bottom: 157px;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  width: 32px;
+  height: 31px;
+  background: #8c96a0;
+  &__svg {
+    width: 10px;
+    height: 17px;
+    fill: #fff;
+  }
+  &:hover {
+    background-color: #8856d9;
+  }
+  &:active {
+    background-color: #9864ed;
+  }
+}
+.news-list__item {
+  border-radius: 6px;
+  width: 615px;
+  height: 346px;
+  background: linear-gradient(180deg, #30373f 22.4%, #141615 100%);
+  .news-list__top {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 7px;
+    .news-list__namecard {
+      font-weight: 600;
+      font-size: 10px;
+      text-transform: uppercase;
+      color: #8856d9;
+    }
+    .news-list__date {
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 170%;
+      color: #8c96a0;
+    }
+  }
+  .news-list__title {
+    font-weight: 600;
+    font-size: 19px;
+    text-transform: uppercase;
+    color: #fff;
+    padding-left: 20px;
+  }
+  .news-list__info {
+    position: relative;
+    display: flex;
+    gap: 22px;
+    padding: 17px 20px 20px;
+    .news-list__img {
+      border-radius: 6px;
+      width: 278px;
+      height: 248px;
+    }
+    .news-list__text {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 142%;
+      color: #d9d9d9;
+    }
+    .news-list__button {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+
+      border-radius: 6px;
+      width: 96px;
+      height: 29px;
+      background: #8c96a0;
+      font-weight: 500;
+      font-size: 13px;
+      text-transform: uppercase;
+      color: #fff;
+      padding: 7px 30px;
+    }
+  }
+}
