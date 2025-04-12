@@ -1,0 +1,2 @@
+var faqButtons=document.querySelectorAll(".faq-list__btn");faqButtons.forEach((function(e){var l=e.previousElementSibling,t=e.querySelector(".faq-list__svg--open.faq-icon"),s=e.querySelector(".faq-list__svg--close.faq-icon");l&&t&&s&&e.addEventListener("click",(function(){l.classList.toggle("visible"),t.style.display="none"===t.style.display?"block":"none",s.style.display="block"===s.style.display?"none":"block"}))}));
+//# sourceMappingURL=index.1caa79bd.js.map
