@@ -1,0 +1,197 @@
+.backdrop-buy {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  z-index: 9;
+  opacity: 1;
+}
+.backdrop-buy.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.modal-buy {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  border-radius: 12px;
+  background-image: url('../images/modalmen.png'),
+    linear-gradient(180deg, rgba(79, 96, 152, 0) 63.61%, #30373f 100%);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #1c2023;
+  max-width: 470px;
+  min-height: 527px;
+  padding: 10px;
+
+  @media (min-width: 480px) {
+    padding: 32px;
+  }
+
+  &__title {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    color: #8856d9;
+    text-transform: uppercase;
+  }
+  &__subtitle {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 167%;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 14px 0 17px;
+  }
+  &__btn-close {
+    background-color: transparent;
+    width: 17px;
+    height: 23px;
+    position: absolute;
+    top: 6px;
+    right: 12px;
+  }
+  &__icon-close {
+    fill: #fff;
+    width: 13px;
+    height: 28px;
+  }
+  &__text {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #d9d9d9;
+    margin-bottom: 9px;
+  }
+  &-total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+    &__title {
+      font-family: 'Rubik', sans-serif;
+      font-weight: 500;
+      font-size: 14px;
+      text-align: center;
+      color: #fff;
+      text-transform: uppercase;
+    }
+    &__sum {
+      font-family: 'Rubik', sans-serif;
+      font-weight: 500;
+      font-size: 20px;
+      text-align: center;
+      color: #fff;
+    }
+  }
+  &__submit {
+    border-radius: 6px;
+    background-color: #8856d9;
+    padding: 11px 0;
+    width: 100%;
+
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+  }
+}
+.modal-buy-form {
+  &__pages {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    @media (min-width: 480px) {
+      gap: 26px;
+    }
+  }
+  &__label {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 17px;
+  }
+  &__label-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 7px;
+  }
+  &__link {
+    font-weight: 700;
+    text-decoration: underline;
+    color: #ff4136;
+  }
+  &__input {
+    border-radius: 6px;
+    background-color: #30373f;
+    padding: 15px;
+
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #f4ebeb;
+
+    @media (min-width: 480px) {
+      min-width: 190px;
+    }
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
+    &--checkbox {
+      appearance: none;
+      border-radius: 6px;
+      width: 25px;
+      min-width: 11px;
+      height: 25px;
+      outline: none;
+      position: relative;
+      cursor: pointer;
+      margin-right: 12px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      &:checked::after {
+        content: '✔';
+        position: absolute;
+        font-size: 16px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        border-radius: 2px;
+      }
+    }
+  }
+}
