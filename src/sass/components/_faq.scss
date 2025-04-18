@@ -1,31 +1,37 @@
 .faq{
     background-color: #1C2023;
-    margin-top: 60px;
+    padding-top: 60px;
 display: flex;
 justify-content: center;
-}
-.faq__title{
+
+&__title{
     color: #FFF;
 text-align: center;
 font-family: Rubik;
-font-size: 40px;
+font-size: 20px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
 margin-bottom: 40px;
+@media(min-width: 1220px){
+  font-size: 40px;
+}
+}
 }
 .faq-list{
   display: flex;
-    gap: 38px;
+    gap: 18px;
 flex-direction: column;
+@media(min-width: 1220px){
+  gap: 38px;
 }
-.faq-list__item{
+
+&__item{
     display: flex; 
     flex-direction: column; 
-    // justify-content: space-between;
-    // align-items: center; 
     
  padding-bottom: 15px; 
+}
 }
 .faq-list__answer{
 
@@ -41,58 +47,110 @@ padding-bottom: 13px;
 margin-right: 20px;
 border-bottom: 2px solid #8856d9;
 }
-.faq-list-overlay__text span {
-    color: red; 
-    font-weight: bold; 
-  }
-.faq-list-overlay__text{
+.faq-list-overlay{
+
+  &__text{
     color: #FFF;
 font-family: Rubik;
 font-size: 14px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
-width: 904px;
+width: 100px;
+@media(min-width: 768px){
+  width: 700px;
 }
+@media(min-width: 1220px){
+  width: 904px;
+}
+& span {
+  color: red; 
+  font-weight: bold; 
+}
+
+}
+}
+
+
 .faq-list__btn{
-    width: 30.0px;
-height: 30.0px;
-    flex-shrink: 0;
+    width: 30px;
+height: 30px;
 border-radius: 6px;
 background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), #8C96A0;
-position: relative;
-align-self: flex-end; 
-margin-top: -40px; 
-margin-right: 3px;
+
+position: absolute;
+  right: 0;
+  transform: translateY(50%); 
+  z-index: 1;
+
+@media(min-width: 1220px){
+  width: 30px;
+  height: 30px;
 }
-.faq-list__overlay {
-  margin-top: 0; 
-  padding-top: 10px; 
 }
+
 .faq-list__svg--close,
 .faq-list__svg--open {
   position: absolute;
   top: 50%;
   left: 50%;
+
+  
   transform: translate(-50%, -50%);
   width: 13px;
   height: 13px; 
   fill: #ffffff; 
 }
-.faq-list__svg--open {
-    display: block; 
-  }
+
+//  старий код який аварійно пригодиться якшо шо
+
+// .faq-list__svg--open {
+//   display: flex; 
+// }
+
+// .faq-list__svg--close {
+//   display: none;
+// }
+// .faq-list__svg--open {
+//     display: block; 
+//   }
   
-  .faq-list__item.open .faq-list__svg--open {
-    display: none; 
-  }
+//   .faq-list__item.open .faq-list__svg--open {
+//     display: none; 
+//   }
   
-  .faq-list__item.open .faq-list__svg--close {
-    display: block; 
-  }
+//   .faq-list__item.open .faq-list__svg--close {
+//     display: block; 
+//   }
 // .faq-list__svg--close{
 //     display: none; 
 //     width: 13px; 
 //     height: 24px; 
 //     fill: #ffffff; 
 //   }
+
+
+
+
+// код демонів
+.faq-list__overlay,
+.faq-list-overlay__text {
+  display: none;
+}
+.faq-list__item.open .faq-list__overlay,
+.faq-list__item.open .faq-list-overlay__text {
+  display: block;
+}
+
+.faq-list__svg--close {
+  display: none;
+}
+.faq-list__item.open .faq-list__svg--open {
+  display: none;
+    width: 13px; 
+    height: 24px; 
+    fill: #ffffff; 
+}
+.faq-list__item.open .faq-list__svg--close {
+  display: block;
+}
