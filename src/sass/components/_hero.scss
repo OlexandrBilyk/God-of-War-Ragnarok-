@@ -2,6 +2,12 @@
   padding: 130px 0;
   background-color: #1c2023;
 
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 2dpi),
+    (min-resolution: 192dppx) {
+    background-image: url('../images/herobg@2x.jpg');
+  }
+
   @media (min-width: 768px) {
     padding: 186px 0;
   }
