@@ -1,0 +1,132 @@
+.DualSense {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1d20;
+    padding: 4rem 2rem;
+    color: #d3d9df;
+    flex-wrap: wrap;
+    gap: 2rem;
+  
+    @media (min-width: 1024px) {
+     
+      text-align: center;
+      padding: 3rem 1.5rem;
+    }
+  
+    @media (min-width: 600px) {
+      padding: 2rem 1rem;
+    }
+  }
+
+  .DualSense__textbox {
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    width: 425px;
+    height: 225px;
+  }
+  }
+  
+  .DualSense__title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 2rem;
+    text-align: center;
+
+    @media (min-width: 1024px) {
+      font-size: 2.5rem;
+    }
+  
+    @media (min-width: 600px) {
+      font-size: 2rem;
+    }
+  }
+  
+  .DualSense-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 21px;
+  
+    @media (min-width: 1024px) {
+      font-size: 1.1rem;
+    }
+  
+    @media (min-width: 600px) {
+      font-size: 1rem;
+    }
+  }
+  
+  .DualSense-text__span--purple {
+    color: #7a43d6;
+    font-weight: 600;
+  }
+  
+  .DualSense-text__span--red {
+    color: #f24e40;
+    font-weight: 700;
+  }
+  
+  .DualSense-title__price {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 10px;
+  
+    @media (min-width: 1024px) {
+      font-size: 1.7rem;
+    }
+  
+    @media (min-width: 600px) {
+      font-size: 1.4rem;
+    }
+  }
+  
+  .DualSense__btn {
+    background-color: #f24e40;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+  
+    &:hover {
+      background-color: darken(#f24e40, 10%);
+    }
+  
+    @media (min-width: 600px) {
+      width: 100%;
+      max-width: 280px;
+      margin-top: 1rem;
+      
+      font-size: 0.95rem;
+    }
+  }
+  
+  .DualSense__img {
+      max-width: 400px;
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      margin-top: 20px;
+      background-color:
+#4f6098 blur(150px);;
+
+
+
+    @media (min-width: 1024px) {
+      margin-top: 2rem;
+        max-width: 400px;
+    }
+  }
+
+//   .DualSense__img::before {
+//     display: block;
+//     background-color:
+// #4f6098;
+// filter: blur(75px);
+//   }
