@@ -1,5 +1,5 @@
 .news {
-  background: #1c2023;
+  background-color: getColors('bg-color');
   padding-top: 157px;
   overflow: hidden;
   position: relative;
@@ -7,7 +7,7 @@
     font-weight: 600;
     font-size: 40px;
     text-align: center;
-    color: #fff;
+    color: getColors('white');
     padding-bottom: 30px;
   }
 }
@@ -51,20 +51,20 @@
       font-weight: 600;
       font-size: 10px;
       text-transform: uppercase;
-      color: #8856d9;
+      color: getColors('button-purple');
     }
     .news-list__date {
       font-weight: 400;
       font-size: 10px;
       line-height: 170%;
-      color: #8c96a0;
+      color: getColors('grey-color');
     }
   }
   .news-list__title {
     font-weight: 600;
     font-size: 19px;
     text-transform: uppercase;
-    color: #fff;
+    color: getColors('white');
     padding-left: 20px;
   }
   .news-list__info {
@@ -94,7 +94,7 @@
       font-weight: 400;
       font-size: 12px;
       line-height: 142%;
-      color: #d9d9d9;
+      color: getColors('news-color');
     }
     .news-list__button {
       position: absolute;
@@ -104,14 +104,14 @@
       border-radius: 6px;
       width: 96px;
       height: 29px;
-      background: #8c96a0;
+      background: getColors('grey-color');
       font-weight: 500;
       font-size: 13px;
       text-transform: uppercase;
-      color: #fff;
+      color: getColors('white');
       padding: 7px 30px;
       &:hover {
-        background-color: #8856d9;
+        background-color: getColors('button-purple');
       }
       &:active {
         background-color: #9864ed;
@@ -137,14 +137,14 @@
   border-radius: 6px;
   width: 32px;
   height: 31px;
-  background: #8c96a0;
+  background: getColors('grey-color');
   &__svg {
     width: 10px;
     height: 17px;
-    fill: #fff;
+    fill: getColors('white');
   }
   &:hover {
-    background-color: #8856d9;
+    background-color: getColors('button-purple');
   }
   &:active {
     background-color: #9864ed;
