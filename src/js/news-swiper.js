@@ -2,8 +2,6 @@ document.addEventListener('DOMContentLoaded', function () {
   const newsSwiper = new Swiper('.news-swiper', {
     wrapperClass: 'news-list',
     slideClass: 'news-list__item',
-    // slidesPerView: 2,
-    // spaceBetween: 18,
     loop: true,
     grabCursor: true,
     navigation: {
