@@ -59,7 +59,7 @@
     }
 
     &:nth-child(7) .nav-list__link {
-      color: #fff;
+      color: getColors('white');
       font-weight: 700;
     }
   }
@@ -74,7 +74,7 @@
     transition: color 250ms ease-in-out;
 
     &:hover {
-      color: #8856d9;
+      color: getColors('button-purple');
     }
   }
   &__btn {
@@ -87,7 +87,7 @@
   &__icon {
     width: 12px;
     height: 12px;
-    fill: #fff;
+    fill: getColors('white');
     transition: fill 250ms ease-in-out;
   }
 }
@@ -101,7 +101,7 @@
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
     font-size: 15px;
-    color: #8c96a0;
+    color: getColors('grey-color');
     @media (min-width: 480px) {
       font-size: 16px;
     }
@@ -123,7 +123,7 @@
       font-family: 'Rubik', sans-serif;
       font-weight: 700;
       font-size: 30px;
-      color: #a9c7c7;
+      color: getColors('blue-color');
       @media (min-width: 480px) {
         font-size: 40px;
       }
@@ -132,7 +132,7 @@
       font-family: 'Rubik', sans-serif;
       font-weight: 400;
       font-size: 16px;
-      color: #8c96a0;
+      color: getColors('grey-color');
     }
   }
 }

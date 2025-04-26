@@ -31,7 +31,7 @@
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #1c2023;
+  background-color: getColors('bg-color');
   max-width: 470px;
   min-height: 527px;
   padding: 10px;
@@ -46,7 +46,7 @@
     font-weight: 700;
     font-size: 18px;
     text-align: center;
-    color: #8856d9;
+    color: getColors('button-purple');
     text-transform: uppercase;
   }
   &__subtitle {
@@ -54,7 +54,7 @@
     font-weight: 500;
     font-size: 15px;
     line-height: 167%;
-    color: #fff;
+    color: getColors('white');
     text-align: center;
     text-transform: uppercase;
     margin: 14px 0 17px;
@@ -68,7 +68,7 @@
     right: 12px;
   }
   &__icon-close {
-    fill: #fff;
+    fill: getColors('white');
     width: 13px;
     height: 28px;
   }
@@ -76,7 +76,7 @@
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
     font-size: 13px;
-    color: #d9d9d9;
+    color: getColor('news-color');
     margin-bottom: 9px;
   }
   &-total {
@@ -89,7 +89,7 @@
       font-weight: 500;
       font-size: 14px;
       text-align: center;
-      color: #fff;
+      color: getColors('white');
       text-transform: uppercase;
     }
     &__sum {
@@ -97,12 +97,12 @@
       font-weight: 500;
       font-size: 20px;
       text-align: center;
-      color: #fff;
+      color: getColors('white');
     }
   }
   &__submit {
     border-radius: 6px;
-    background-color: #8856d9;
+    background-color: getColors('button-purple');
     padding: 11px 0;
     width: 100%;
 
@@ -110,7 +110,7 @@
     font-weight: 500;
     font-size: 15px;
     text-transform: uppercase;
-    color: #fff;
+    color: getColors('white');
     text-align: center;
   }
 }
@@ -129,7 +129,7 @@
     font-weight: 400;
     font-size: 10px;
     text-transform: uppercase;
-    color: #fff;
+    color: getColors('white');
     display: flex;
     flex-direction: column;
     gap: 7px;
@@ -144,7 +144,7 @@
     font-weight: 400;
     font-size: 12px;
     text-transform: uppercase;
-    color: #fff;
+    color: getColors('white');
     margin-bottom: 7px;
   }
   &__link {
@@ -154,7 +154,7 @@
   }
   &__input {
     border-radius: 6px;
-    background-color: #30373f;
+    background-color: getColors('modal-grey');
     padding: 15px;
 
     font-family: 'Rubik', sans-serif;
@@ -191,7 +191,7 @@
         content: '✔';
         position: absolute;
         font-size: 16px;
-        color: white;
+        color: getColors('white');
         display: flex;
         align-items: center;
         justify-content: center;
