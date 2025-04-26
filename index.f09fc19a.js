@@ -1,0 +1,2 @@
+document.addEventListener("DOMContentLoaded",(function(){var e=new Swiper(".news-swiper",{wrapperClass:"news-list",slideClass:"news-list__item",loop:!0,grabCursor:!0,navigation:{nextEl:"#swiper-next",prevEl:"#swiper-prev"},breakpoints:{768:{slidesPerView:1,spaceBetween:18},1024:{slidesPerView:2,spaceBetween:18}},effect:"slide",speed:500}),n=document.getElementById("swiper-prev"),s=document.getElementById("swiper-next");n.addEventListener("click",(function(){e.slidePrev()})),s.addEventListener("click",(function(){e.slideNext()}))}));
+//# sourceMappingURL=index.f09fc19a.js.map
