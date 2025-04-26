@@ -17,10 +17,6 @@ document.addEventListener('DOMContentLoaded', function () {
         slidesPerView: 2,
         spaceBetween: 18
       },
-      1400: {
-        slidesPerView: 2,
-        spaceBetween: 18
-      }
     },
     effect: 'slide',
     speed: 500,
