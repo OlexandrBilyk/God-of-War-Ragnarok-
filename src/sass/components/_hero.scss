@@ -1,6 +1,6 @@
 .hero {
   padding: 130px 0;
-  background-color: #1c2023;
+  background-color: getColors('bg-color');
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 2dpi),
@@ -39,7 +39,7 @@
     font-weight: 600;
     font-size: 55px;
     line-height: 100%;
-    color: #fff;
+    color: getColors('white');
     @media (min-width: 768px) {
       font-size: 65px;
       max-width: 538px;
@@ -50,7 +50,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
-    color: #a9c7c7;
+    color: getColors('blue-color');
     margin: 37px 0 20px;
     @media (min-width: 768px) {
       font-size: 18px;
@@ -67,13 +67,13 @@
   &__btn {
     padding: 7px 34px;
     border-radius: 6px;
-    background-color: #8856d9;
+    background-color: getColor('button-purple');
 
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
     font-size: 14px;
     text-transform: uppercase;
-    color: #fff;
+    color: getColors('white');
     width: 100%;
     position: relative;
     z-index: 8;
