@@ -1,5 +1,5 @@
-const playButton = document.querySelector('.trailer__video-btn');
-const videoInfo = document.querySelector('.trailer .container');
+const playButton = document.querySelector('.trailer__video-info-btn');
+const videoInfo = document.querySelector('.trailer__video-info');
 const video = document.querySelector(".trailer__video-elem");
 if (playButton && videoInfo && video) {
   playButton.addEventListener("click", function () {
