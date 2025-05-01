@@ -7,7 +7,7 @@ justify-content: center;
 &__title{
     color: getColors('white');
 text-align: center;
-font-family: Rubik;
+font-family: "Rubik", sans-serif;
 font-size: 20px;
 font-style: normal;
 font-weight: 600;
@@ -32,13 +32,14 @@ flex-direction: column;
     
  padding-bottom: 15px; 
 }
+
 }
 .faq-list__answer{
 
 
     color: getColors('white');
 text-align: left;
-font-family: Rubik;
+font-family: "Rubik", sans-serif;
 font-size: 17px;
 font-style: normal;
 font-weight: 600;
@@ -47,16 +48,22 @@ padding-bottom: 13px;
 margin-right: 20px;
 border-bottom: 2px solid getColors('button-purple');
 }
+.faq-list__pages{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
 .faq-list-overlay{
 
   &__text{
     color: getColors('white');
-font-family: Rubik;
+font-family: "Rubik", sans-serif;
 font-size: 14px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
-width: 100px;
+
 @media(min-width: 768px){
   width: 700px;
 }
