@@ -1,11 +1,11 @@
 .faq{
-    background-color: #1C2023;
+    background-color: getColors('bg-color');
     padding-top: 60px;
 display: flex;
 justify-content: center;
 
 &__title{
-    color: #FFF;
+    color: getColors('white');
 text-align: center;
 font-family: Rubik;
 font-size: 20px;
@@ -36,7 +36,7 @@ flex-direction: column;
 .faq-list__answer{
 
 
-    color: #FFF;
+    color: getColors('white');
 text-align: left;
 font-family: Rubik;
 font-size: 17px;
@@ -45,12 +45,12 @@ font-weight: 600;
 line-height: normal;
 padding-bottom: 13px;
 margin-right: 20px;
-border-bottom: 2px solid #8856d9;
+border-bottom: 2px solid getColors('button-purple');
 }
 .faq-list-overlay{
 
   &__text{
-    color: #FFF;
+    color: getColors('white');
 font-family: Rubik;
 font-size: 14px;
 font-style: normal;
@@ -64,7 +64,7 @@ width: 100px;
   width: 904px;
 }
 & span {
-  color: red; 
+  color: getColors('red-color'); 
   font-weight: bold; 
 }
 
@@ -99,40 +99,8 @@ position: absolute;
   transform: translate(-50%, -50%);
   width: 13px;
   height: 13px; 
-  fill: #ffffff; 
+  fill: getColors('white'); 
 }
-
-//  старий код який аварійно пригодиться якшо шо
-
-// .faq-list__svg--open {
-//   display: flex; 
-// }
-
-// .faq-list__svg--close {
-//   display: none;
-// }
-// .faq-list__svg--open {
-//     display: block; 
-//   }
-  
-//   .faq-list__item.open .faq-list__svg--open {
-//     display: none; 
-//   }
-  
-//   .faq-list__item.open .faq-list__svg--close {
-//     display: block; 
-//   }
-// .faq-list__svg--close{
-//     display: none; 
-//     width: 13px; 
-//     height: 24px; 
-//     fill: #ffffff; 
-//   }
-
-
-
-
-// код демонів
 .faq-list__overlay,
 .faq-list-overlay__text {
   display: none;
@@ -149,7 +117,7 @@ position: absolute;
   display: none;
     width: 13px; 
     height: 24px; 
-    fill: #ffffff; 
+    fill: getColors('white'); 
 }
 .faq-list__item.open .faq-list__svg--close {
   display: block;
