@@ -1,84 +1,83 @@
+.trailer {
+  width: 100%;
 
-.trailer{
-    width: 100%;
-    background-color: getColors('bg-color');
+  background-color: #1c2023;
   padding-top: 60px;
-  &__title{
-    color:  getColors('white');
-    font-family: "Rubik", sans-serif;
-    font-size: 20px;
+  &__title {
+    color: #ffff;
+    font-family: 'Rubik', sans-serif;
+
+    font-size: 30px;
     font-weight: 600;
     margin-bottom: 25px;
-text-align: center;
-
-@media (min-width: 1024px) {
-  font-size: 40px;
-  margin-bottom: 38px;
-}
-}
-}
-.trailer__video-pages{
-  position: relative;
-}
-.trailer__video{
-  width: 100vw;
- 
-  
-  &-elem{
-    width: 100%;
-    display: block;
-    background-color: black;
-  }
-}
-  .trailer__video-info{
-    position: absolute;
-    top: 50%;
-    left:  50%;
-   
-    transform: translate(-50%, -50%);
     text-align: center;
-    z-index: 5;
-  
-  .trailer__video-info-title{
-    color:  getColors('white');
-    font-family: "Rubik", sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.33px;
-    margin-bottom: 27px;
-    
-    @media(min-width: 1220px){
-      font-size: 50px;
-      line-height: 1.5px;
+
+    @media (min-width: 1024px) {
+      font-size: 40px;
+      margin-bottom: 38px;
     }
-    
-    
+  }
+
+  &__video {
+    width: 100vw;
+
+    &-pages {
+      position: relative;
     }
-    .trailer__video-info-btn{
+
+    &-elem {
+      width: 100%;
+      display: block;
+    }
+    &-info {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      transform: translate(-50%, -50%);
+      text-align: center;
+      z-index: 5;
+    }
+    &-info-title {
+      font-family: 'Rubik', sans-serif;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 0.78;
+      color: #fff;
+
+      text-align: center;
+
+      @media (min-width: 768px) {
+        font-size: 40px;
+      }
+
+      @media (min-width: 1024px) {
+        font-size: 50px;
+        line-height: 1.5px;
+      }
+    }
+    &-info-btn {
       border-radius: 6px;
-      border-radius: 6px;
-      background:  getColors('modal-grey');
-      
-      
-      
-      color:  getColors('white');;
-      font-family: "Rubik", sans-serif;
+      background-color: #30373f;
+      padding: 5px 16px;
+
+      color: #fff;
+      font-family: 'Rubik', sans-serif;
       font-size: 12px;
-      font-style: normal;
       font-weight: 500;
       line-height: 16px;
       text-align: center;
-      padding: 9px 26px;
-      margin: 29px auto;
-      @media (min-width: 1220px) {
+      margin: 10px auto;
+      @media (min-width: 768px) {
+        margin-top: 15px;
+        padding: 9px 26px;
+      }
+
+      @media (min-width: 1024px) {
+        margin-top: 29px;
         padding: 11px 30px;
         font-size: 14px;
       }
-      
-      }
     }
-      
-
-
-
-
+  }
+}
