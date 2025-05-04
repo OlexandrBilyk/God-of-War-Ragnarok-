@@ -1,11 +1,10 @@
 .mobile-menu {
-  position: absolute;
+  position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   padding: 30px;
   background-color: #1c2023;
   width: 55%;
-  height: 100vh;
   z-index: 15;
   transform: translateX(0);
   transition: transform 400ms ease-in-out;
