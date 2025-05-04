@@ -1,3 +1,19 @@
+.footer {
+  padding: 0 0 12px 0;
+  position: relative;
+  background-color: getColors('bg-color');
+  z-index: 1;
+
+  @media (min-width: 768px) {
+    background-image: url('../images/footerbg@1x.png');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 175px;
+  }
+}
 .footer-top {
   display: flex;
   justify-content: space-between;
