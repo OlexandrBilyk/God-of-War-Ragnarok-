@@ -1,33 +1,37 @@
 .footer {
-  padding: 155px 0 12px 0;
+  padding: 0 0 12px 0;
   position: relative;
-  background-color: #1c2023;
+  background-color: getColors('bg-color');
   z-index: 1;
+  @media (min-width: 768px) {
+    background-image: url('../images/footerbg@1x.png');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
   @media screen and (min-width: 1200px) {
     padding-top: 175px;
   }
 }
-.footer-bg {
-  width: 522px;
-  height: 292px;
-  position: absolute;
-  top: 175;
-  left:-20px;
-  z-index: -1;
-  background: url('../images/footerbg@1x.png') no-repeat center/cover;
-  @media screen and (min-width: 768px) {
-    top: 60;
-    left: 120px;
-    width: 626px;
-    height: 350px;
-  }
-  @media screen and (min-width: 1200px) {
-    top: 0;
-    left: 400px;
-    width: 786px;
-    height: 440px;
-  }
-}
+// .footer-bg {
+//   width: 522px;
+//   height: 292px;
+//   position: absolute;
+//   top: 175;
+//   left: -20px;
+//   z-index: -1;
+//   @media screen and (min-width: 768px) {
+//     top: 60;
+//     left: 120px;
+//     width: 626px;
+//     height: 350px;
+//   }
+//   @media screen and (min-width: 1200px) {
+//     top: 0;
+//     left: 400px;
+//     width: 786px;
+//     height: 440px;
+//   }
+// }
 .footer-top {
   display: flex;
   justify-content: space-between;
@@ -35,7 +39,7 @@
   text-align: center;
   flex-direction: column;
   gap: 30px;
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     flex-direction: row;
   }
 }
@@ -50,24 +54,24 @@
     color: rgba(255, 255, 255, 0.5);
     z-index: 100;
     &:hover {
-        color: #fff;
+      color: getColors('white');
     }
   }
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     flex-direction: row;
   }
-  @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1200px) {
     flex-direction: row;
   }
 }
 .footer-language {
   text-transform: uppercase;
-  color: #8c96a0;
+  color: getColors('grey-color');
   font-weight: 700;
   font-size: 14px;
   z-index: 100;
   &__en {
-    color: #fff;
+    color: getColors('white');
   }
 }
 .footer-info {
@@ -77,10 +81,10 @@
   align-items: center;
   &__text {
     text-align: center;
-    color: #8c96a0;
+    color: getColors('grey-color');
     padding: 50px 0 37px 0;
     z-index: 100;
-    @media screen and (min-width: 992px){
+    @media screen and (min-width: 992px) {
       max-width: 904px;
     }
   }
@@ -91,14 +95,14 @@
   }
   &__year {
     padding: 18px 0 13px 0;
-    color: #8c96a0;
+    color: getColors('grey-color');
     z-index: 100;
   }
   &__rights {
-    color: #8c96a0;
+    color: getColors('grey-color');
     z-index: 100;
     &__link {
-      color: #8856d9;
+      color: getColors('button-purple');
     }
   }
 }

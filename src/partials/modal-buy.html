@@ -1,0 +1,73 @@
+<div class="backdrop-buy is-hidden">
+  <div class="modal-buy">
+    <h3 class="modal-buy__title">god of war raganrok</h3>
+    <h4 class="modal-buy__subtitle">standart edition</h4>
+    <button type="button" class="modal-buy__btn-close" id="buyModalClose">
+      <svg class="modal-buy__icon-close">
+        <use href="./images/icons/symbol-defs.svg#icon-close_modal"></use>
+      </svg>
+    </button>
+    <form class="modal-buy-form">
+      <label class="modal-buy-form__label">
+        credit card:
+        <input
+          type="text"
+          class="modal-buy-form__input"
+          placeholder="0000 0000 0000 0000"
+          maxlength="16"
+          required
+        />
+      </label>
+      <div class="modal-buy-form__pages">
+        <label class="modal-buy-form__label">
+          expire:
+          <input
+            type="date"
+            class="modal-buy-form__input"
+            placeholder="mm/yy"
+            required
+          /> </label
+        ><label class="modal-buy-form__label">
+          ccv:
+          <input
+            type="password"
+            class="modal-buy-form__input"
+            placeholder="***"
+            maxlength="3"
+            minlength="3"
+            required
+          />
+        </label>
+      </div>
+      <label class="modal-buy-form__label">
+        instant:
+        <input
+          type="text"
+          class="modal-buy-form__input"
+          placeholder="John Doe"
+          required
+        />
+      </label>
+      <label class="modal-buy-form__label-checkbox">
+        <input
+          type="checkbox"
+          class="modal-buy-form__input modal-buy-form__input--checkbox"
+        />
+
+        I agree with the <a class="modal-buy-form__link"> rules </a> of the site
+      </label>
+    </form>
+    <p class="modal-buy__text">
+      Download of this product is subject to the PlayStation Network Terms of
+      Service and our Software Usage Terms plus any specific additional
+      conditions applying to this product. If you do not wish to accept these
+      terms, do not download this product. See Terms of Service for more
+      important information.
+    </p>
+    <div class="modal-buy-total">
+      <h4 class="modal-buy-total__title">your total suma:</h4>
+      <p class="modal-buy-total__sum" id="totalSum">15.99$</p>
+    </div>
+    <button type="submit" class="modal-buy__submit">buy now</button>
+  </div>
+</div>

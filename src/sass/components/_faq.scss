@@ -1,98 +1,140 @@
-.faq{
-    background-color: #1C2023;
-    margin-top: 60px;
-display: flex;
-justify-content: center;
-}
-.faq__title{
-    color: #FFF;
-text-align: center;
-font-family: Rubik;
-font-size: 40px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-margin-bottom: 40px;
-}
-.faq-list{
+.faq {
+  background-color: getColors('bg-color');
+  padding-top: 60px;
   display: flex;
+  justify-content: center;
+
+  &__title {
+    color: getColors('white');
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 40px;
+
+    @media (min-width: 1024px) {
+      font-size: 40px;
+    }
+  }
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+
+  @media (min-width: 1024px) {
     gap: 38px;
-flex-direction: column;
-}
-.faq-list__item{
-    display: flex; 
-    flex-direction: column; 
-    // justify-content: space-between;
-    // align-items: center; 
-    
- padding-bottom: 15px; 
-}
-.faq-list__answer{
+  }
 
+  &__item {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: width 500ms ease-in-out;
 
-    color: #FFF;
-text-align: left;
-font-family: Rubik;
-font-size: 17px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-padding-bottom: 13px;
-margin-right: 20px;
-border-bottom: 2px solid #8856d9;
-}
-.faq-list-overlay__text span {
-    color: red; 
-    font-weight: bold; 
+    &.open .faq-list__overlay {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    &.open .faq-list__svg--close {
+      display: block;
+    }
+
+    &.open .faq-list__svg--open {
+      display: none;
+    }
+
+    &.open .faq-list__overlay-text {
+      margin-bottom: 7px;
+      transition: margin-bottom 500ms ease-in-out;
+    }
   }
-.faq-list-overlay__text{
-    color: #FFF;
-font-family: Rubik;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-width: 904px;
-}
-.faq-list__btn{
-    width: 30.0px;
-height: 30.0px;
-    flex-shrink: 0;
-border-radius: 6px;
-background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), #8C96A0;
-position: relative;
-align-self: flex-end; 
-margin-top: -40px; 
-margin-right: 3px;
-}
-.faq-list__overlay {
-  margin-top: 0; 
-  padding-top: 10px; 
-}
-.faq-list__svg--close,
-.faq-list__svg--open {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 13px;
-  height: 13px; 
-  fill: #ffffff; 
-}
-.faq-list__svg--open {
-    display: block; 
+
+  &__pages {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 13px;
+    border-bottom: 2px solid getColors('button-purple');
   }
-  
-  .faq-list__item.open .faq-list__svg--open {
-    display: none; 
+
+  &__answer {
+    color: getColors('white');
+    text-align: left;
+    font-family: 'Rubik', sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
   }
-  
-  .faq-list__item.open .faq-list__svg--close {
-    display: block; 
+
+  &__btn {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.2) 100%
+      ),
+      #8c96a0;
+
+    @media (min-width: 1024px) {
+      width: 30px;
+      height: 30px;
+    }
   }
-// .faq-list__svg--close{
-//     display: none; 
-//     width: 13px; 
-//     height: 24px; 
-//     fill: #ffffff; 
-//   }
+
+  &__svg {
+    width: 13px;
+    height: 13px;
+    fill: getColors('white');
+
+    &--open {
+      display: block;
+    }
+
+    &--close {
+      display: none;
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  &__overlay {
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: opacity 500ms ease-in-out, transform 600ms ease-in-out;
+
+    &-text {
+      color: getColors('white');
+      font-family: 'Rubik', sans-serif;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-top: 5px;
+
+      @media (min-width: 768px) {
+        max-width: 700px;
+      }
+
+      @media (min-width: 1024px) {
+        max-width: 904px;
+      }
+
+      & span {
+        color: getColors('red-color');
+        font-weight: bold;
+      }
+    }
+  }
+}

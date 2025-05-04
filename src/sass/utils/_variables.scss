@@ -1,0 +1,14 @@
+$colors: (
+  'bg-color': #1c2023,
+  'modal-grey': #30373f,
+  'button-purple': #8856d9,
+  'blue-color': #a9c7c7,
+  'grey-color': #8c96a0,
+  'red-color': #ff4136,
+  'white': #ffffff,
+  'news-color': #d9d9d9,
+);
+
+@function getColors($key) {
+  @return map-get($colors, $key);
+}

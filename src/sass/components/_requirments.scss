@@ -1,0 +1,201 @@
+.Requirments {
+  padding: 89px 0 0;
+  background-color: getColors('bg-color');
+
+  &__title {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    text-align: center;
+    @media (min-width: 768px) {
+      font-size: 40px;
+    }
+  }
+  &__subtitle {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    color: #fff;
+    text-align: center;
+    margin: 32px 0 21px;
+    @media (min-width: 768px) {
+      font-size: 18px;
+    }
+  }
+
+  &-switcher {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 17px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 0;
+    }
+
+    &__text {
+      font-family: 'Rubik', sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      color: #30373f;
+      transition: color 250ms ease-in-out;
+
+      &.minimum {
+        color: #fff;
+      }
+      &.standarted {
+        color: #fff;
+      }
+    }
+  }
+  &__switcher {
+    width: 54px;
+    height: 25px;
+    border-radius: 12px;
+    background-color: #30373f;
+    padding: 4px 5px;
+    cursor: pointer;
+
+    &.recommended + .Requirments-switcher__text--recommended {
+      color: #fff;
+    }
+    &.limited + .Requirments-switcher__text--limited {
+      color: #fff;
+    }
+    &-circle {
+      background-color: #8856d9;
+      border-radius: 50%;
+      width: 18px;
+      height: 18px;
+      transform: translateX(0);
+      transition: transform 500ms ease-in-out;
+
+      &.pressed {
+        transform: translateX(26px);
+      }
+      &.pressedPs {
+        transform: translateX(26px);
+      }
+    }
+  }
+
+  &__img-container {
+    display: none;
+    @media (min-width: 768px) {
+      display: block;
+      position: relative;
+    }
+    &::before {
+      content: '';
+      display: block;
+      border-radius: 12px;
+      width: 300px;
+      height: 300px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-image: url('../images/archerbg@2x.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    &--viking::before {
+      background-image: url('../images/vikingbg@2x.png');
+    }
+  }
+  &__img {
+    position: relative;
+    z-index: 1;
+    width: 414px;
+    height: 457px;
+
+    &--viking {
+      width: 300px;
+      height: 479px;
+    }
+  }
+  &-system,
+  &-ps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+  }
+  &__price {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    margin: 21px 0 0;
+  }
+}
+.Requirments-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  @media (min-width: 768px) {
+    width: 415px;
+  }
+
+  &__item {
+    align-self: center;
+    text-align: center;
+    @media (min-width: 768px) {
+      align-self: flex-start;
+      text-align: left;
+    }
+  }
+
+  &__text {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 2.4;
+    color: #fff;
+    @media (min-width: 768px) {
+      font-size: 15px;
+    }
+  }
+  &__span {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 2.4;
+    color: #8856d9;
+  }
+  &__btn {
+    border-radius: 6px;
+    background-color: #ff4136;
+    padding: 8px 18px;
+
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #fff;
+    @media (min-width: 768px) {
+      align-self: flex-start;
+    }
+  }
+}
+.Requirments-ps {
+  &__title {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    margin: 90px 0 21px;
+    @media (min-width: 768px) {
+      margin-top: 113px;
+    }
+  }
+}
